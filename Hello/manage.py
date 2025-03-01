@@ -1,10 +1,12 @@
 import os
 import sys
+from django.core.wsgi import get_wsgi_application
 
+# Set the environment variable for Django settings
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Hello.settings')
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Hello.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -15,9 +17,8 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
 
-
 if __name__ == '__main__':
     main()
-from django.core.wsgi import get_wsgi_application
 
+# Vercel looks for 'app' as the WSGI entry point
 app = get_wsgi_application()
