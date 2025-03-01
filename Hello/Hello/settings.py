@@ -14,7 +14,10 @@ SECRET_KEY = 'django-insecure-+v*!(vw!2tw%t-axqd#0p_$k$m71o6ri&j00(*le6(je^vo028
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["btech-ice-cream-wala.vercel.app", "btech-ice-cream-wala-ni4gqd3lr-deepaks-projects-45030d1f.vercel.app"]
+ALLOWED_HOSTS = ["btech-ice-cream-wala.vercel.app" 
+                #  "btech-ice-cream-wala-lk7cia678-deepaks-projects-45030d1f.vercel.app",
+                #  "btech-ice-cream-wala-ni4gqd3lr-deepaks-projects-45030d1f.vercel.app"
+                ]
 
 
 
