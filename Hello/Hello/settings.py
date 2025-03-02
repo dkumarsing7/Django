@@ -87,7 +87,8 @@ STATIC_ROOT = BASE_DIR / "staticfiles"  # Add this so collectstatic works
 # Static files settings
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static"]
-STATIC_ROOT = BASE_DIR / "staticfiles"  # Add this so collectstatic works
+if os.getenv('VERCEL'):
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Database (if you plan to keep SQLite temporarily)
 if os.getenv('VERCEL'):
