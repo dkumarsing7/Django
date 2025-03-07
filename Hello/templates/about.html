@@ -2,6 +2,66 @@
 {% block title %}{% endblock title %}
 {% block body %}
 
-    
+<style>
+    .about-hero {
+        background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+    }
+    .team-member {
+        text-align: center;
+        padding: 20px;
+    }
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+    .mission {
+        background-color: #f8f9fa;
+        padding: 50px 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+</style>
+
+<div class="about-hero">
+    <h1>About Us</h1>
+    <p>We are a passionate team dedicated to innovation and excellence.</p>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center">Our Mission</h2>
+    <p class="text-center">To create technology that simplifies and enhances everyday life.</p>
+</div>
+
+<div class="container">
+    <h2 class="text-center">Meet Our Team</h2>
+    <div class="row text-center">
+        <div class="col-md-4 team-member">
+            <img src="https://images.unsplash.com/photo-1552445009-5f785a9fbf9b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member">
+            <h5>John Doe</h5>
+            <p>Founder & CEO</p>
+        </div>
+        <div class="col-md-4 team-member">
+            <img src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member">
+            <h5>Jane Smith</h5>
+            <p>Lead Developer</p>
+        </div>
+        <div class="col-md-4 team-member">
+            <img src="https://images.unsplash.com/photo-1505033575518-a36ea2ef75ae?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Team Member">
+            <h5>Michael Brown</h5>
+            <p>UI/UX Designer</p>
+        </div>
+    </div>
+</div>
+
+<div class="mission">
+    <h2>Why Choose Us?</h2>
+    <p>We prioritize innovation, user experience, and quality to ensure the best services for our clients.</p>
+</div>
 
 {% endblock body %}
