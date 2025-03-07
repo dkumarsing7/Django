@@ -7,6 +7,32 @@
       {% comment %} border-radius: 50%; {% endcomment %}
       padding: 10px;
     }
+    body {
+        background-color: #f8f9fa;
+    }
+    {% comment %} .navbar {
+        background-color: #007bff;
+    }
+    .navbar-brand, .nav-link {
+        color: white !important;
+    } {% endcomment %}
+    {% comment %} .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    } {% endcomment %}
+    .card {
+        transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+        transform: scale(1.05);
+    }
+    .footer {
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 30px;
+    }
 {% endblock style %}
 {% block body %}
 <div class="container-fluid px-0 mx-0">
@@ -345,6 +371,8 @@
   </div>
 {% comment %} END CARDS {% endcomment %}
 </div>
-  
+<footer class="footer">
+  <p>&copy; 2025 My Website. All rights reserved.</p>
+</footer>
 </div>
 {% endblock body %}
